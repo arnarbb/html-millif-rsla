@@ -1,0 +1,46 @@
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color:#0064CE;
+}
+
+body {
+  
+  
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows:5% 30% 35% 30%;
+  grid-template-areas:
+    " nav nav nav "
+    " header header header "
+    " main  main main "
+    " footer footer footer ";
+}
+
+.nav{
+  border:1px solid black;
+  margin: 0px;
+  padding: 0;
+  grid-area: nav;
+}
+header{
+  margin: 0px;
+  padding: 0;
+ grid-area: header;
+}
+section{
+  margin: 0;
+  padding: 0;
+  grid-area: main;
+  background-image: linear-gradient(#F7D37F,#F6F1D2)
+}
+
+footer{
+  margin: 0px;
+  padding: 0;
+  grid-area:footer;
+}
+
+
+
