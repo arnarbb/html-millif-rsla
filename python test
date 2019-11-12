@@ -1,0 +1,46 @@
+"""
+listi=[]
+for i in range(1,11):
+    orð=input("eh orð:")
+    listi.append(orð)
+
+"""
+listi=["siggi","maggi","maggnus","arnar","aron","maggnus","halli","bjarki","stefan","kalli"]
+
+teljari=0
+for i in listi:
+    if len(i)==4:
+        teljari +=1
+    
+print("það eru",teljari,"orð sem eru 4 stafa lant")
+
+listi1=[]
+for i in range(len(listi)):    
+    if i%2!=0:
+        listi1.append(listi[i][::-1])
+
+    else:
+        listi1.append(listi[i])
+print("")       
+print("listi með öðru hvoru orði öfugu",listi1)
+print("")
+listi2=listi
+
+listi2.sort()
+
+print("skrifa listan út raðaðan\n",listi2)
+print("")
+val=input("ég skal taka út öll nöfn sem byrja á:")
+
+
+print(len(listi2)) 
+for i in listi2:    
+    if i[:1]==val:        
+        listi2.remove(i)
+
+    
+print(len(listi2))        
+print("")    
+print("listin með eingu orði sem birjar á",val,"\n",listi2)
+print("")
+print("listin sem við byrjuðum með\n",listi)
